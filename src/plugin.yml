@@ -1,0 +1,10 @@
+name: TIMV
+main: com.evilcodes.timv.TIMV
+author: EvilCodes
+version: 0.0.1
+description: TIMV by EvilCodes
+commands:
+    timv:
+      description: Ein paar Hauptcommands
+      aliases: [troubleinmineville,tm]
+      usage: /<command>
