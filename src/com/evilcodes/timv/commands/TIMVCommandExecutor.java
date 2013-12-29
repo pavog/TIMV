@@ -18,7 +18,7 @@ public class TIMVCommandExecutor implements CommandExecutor {
 			final String arg = args[0];
 			if (arg.equalsIgnoreCase("reload")) {
 				reload();
-				cs.sendMessage(MessagesHandler.convert("Reloaded"));
+				cs.sendMessage(MessagesHandler.convert("Reloaded").replace("%version%", TIMV.instance.getDescription().getVersion()));
 			} else if (arg.equalsIgnoreCase("help")) {
 				//Help
 				displayHelp(cs, 0);

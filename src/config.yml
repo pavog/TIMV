@@ -8,3 +8,23 @@ Database:
    Tableprefix: "timv_"
 ###For sending debug messages
 Debug: false
+###Game options
+MaxTraitors: 5
+MaxDetectives: 3
+###Main World Options
+#Your mainworldname (like the value in your server.properties or the directoryname)
+Worldname: "world"
+###Lobby options
+Spawn:
+   x: 0
+   y: 70
+   z: 0
+###World options
+#Only use one world and build everything (lobby & maps) in there
+#Playerspawn in the maps
+Maps:
+   test1:
+      x: 100
+      y: 70
+      z: 100
+   

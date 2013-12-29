@@ -12,8 +12,12 @@ public class MessagesHandler {
 
 	public static String convert(String message) {
 		final String msg1 = TIMV.messages.getString(message).replace("&", "§");
-		final String msg = TIMV.messages.getString("Prefix").replace("&", "§") + msg1;
-		return msg;
+		if (message.contains("Line") || message.contains("===")) {
+			return msg1;
+		} else {			
+			//final String msg = TIMV.messages.getString("Prefix").replace("&", "§") + msg1;
+			return msg1;
+		}
 	}
 	
 	public static String noPlayer() {

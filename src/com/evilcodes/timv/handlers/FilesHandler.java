@@ -8,7 +8,7 @@ import com.evilcodes.timv.TIMV;
 
 public class FilesHandler {
 		
-	public static void CheckForConfigs() {
+	public static void CheckForConfigs() {	
 		TIMV.configFile = new File(TIMV.instance.getDataFolder(), "config.yml");
 		TIMV.messagesFile = new File(TIMV.instance.getDataFolder(), "messages.yml");
 		
@@ -61,6 +61,7 @@ public class FilesHandler {
 	         TIMV.instance.saveResource("messages.yml", false);
 	     }
 	    TIMV.messages = YamlConfiguration.loadConfiguration(TIMV.messagesFile);
+	    SaveFiles();
 	    
 	}
 		

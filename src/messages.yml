@@ -1,12 +1,13 @@
 Prefix: "&6[&3TIMV&6] "
 NoPermissions: "&cYou are missing the permission &7%permission% &cto perform this action!"
 NoPlayer: "&cYou have to be a &7player &cto perform this action!"
+NoPasses: "&cYou need atleast 1 pass to perform this action!"
     ################
 ####### Commands #######
     ################
 Header: "&3[==========] &6[ &3TIMV &6] &3[==========]"
 Footer: "&3[==========] &6[ &3TIMV &6] &3[==========]"
-Reloaded: "&6Reloaded &3TIMV version !"
+Reloaded: "&6Reloaded &3TIMV version %version%!"
 Help:
    Line1: "&6/timv help &3Shows this page"
    Line2: "&6/timv info &3Shows information about the plugin and its creator"
@@ -21,8 +22,8 @@ Help:
       Line4: "&6WORK IN PROGRESS"
       Line5: "&6WORK IN PROGRESS"
    Ranks:
-      Line1: "&6Premium+ /traitor &3Use this command in the lobby to become a traitor when you are ingame"
-      Line2: "&6Premium+ /detective &3Use this command in the lobby to become a detective when you are ingame"
+      Line1: "&6Premium+ or pass /traitor &3Use this command in the lobby to become a traitor when you are ingame"
+      Line2: "&6Premium+ or pass /detective &3Use this command in the lobby to become a detective when you are ingame"
       Line3: "&6Premium+ /party &3Secret party in lobby"
       Line4: "&5YouTuber+ &6/nick <name> &3Change your name so that other users can't see your real identity"
       Line5: "&6WORK IN PROGRESS"
@@ -30,5 +31,46 @@ Help:
       Line1: "&6/map <mapID> &3Play this map"
       Line2: "&6/startgame &3Start the game immediately"
       Line3: "&6/stopgame &3Stops the game immediately"
-      Line4: "&6WORK IN PROGRESS"
-      Line5: "&6WORK IN PROGRESS"
+      Line4: "&6/setspawn <mapID> &3Sets the main spawn for all players when teleporting ingame"
+      Line5: "&6/setlobbyspawn &3Sets the lobby spawn for all players when joining the server"
+TL: "&6%time% &3secounds left"
+Vote:
+   Syntax: "&3Please use &6/vote <mapID> &3to vote! &o(MapID must be a number between 1 and 3)"
+   Voted: "&3You successfully voted for map &6%mapid%"
+Shop:
+   OnlyIngame: "&3You can only use the &6shop &3ingame and not in the lobby!"
+   NoInnocents: "&3You can only use the &6shop &3when you are traitor or detective!"
+Traitor:
+   OnlyInLobby: "&3You can only use the &6/traitor command &3in the lobby and not ingame!"
+   Success: "&3You will now be a &6traitor &3when the game starts!"
+   TooMany: "&3There are already too many players who want to be a traitor when the game begins!"
+   AlreadyMatched: "&3You are already going to be a traitor or a detective!"
+Detective:
+   OnlyInLobby: "&3You can only use the &6/detective command &3in the lobby and not ingame!"
+   Success: "&3You will now be a &6detective &3when the game starts!"
+   TooMany: "&3There are already too many players who want to be a detective when the game begins!"
+   AlreadyMatched: "&3You are already going to be a traitor or a detective!"
+Party:
+   OnlyInLobby: "&3You can only use the &6/party command &3in the lobby and not ingame!"
+   OnlyPremiums: "&3You have to be a &6Premiumplayer &3to use this command!"
+Nick:
+   Syntax: "&3Please use &6/nick <name> &3to change your name!"
+   OnlyYoutubers: "&3You have to be a &5YouTuber &3to change your nickname!"
+Map:
+   Syntax: "&3Please use &6/map <mapID> &3to choose this map!"
+   OnlyAdmin: "&3You have to be an &6Admin &3to use this command"
+   Success: "&3You have set the map to play to &6%map%&3!"
+Start:
+   OnlyAdmin: "&3You have to be an &6Admin &3to use this command"
+   ByConsole: "&3The game has been started by &6console&3!"
+Stop:
+   OnlyAdmin: "&3You have to be an &6Admin &3to use this command"
+   ByConsole: "&3The game has been stopped by &6console&3!"
+    ################
+####### Ingame #######
+    ################
+Gamestart:
+   All: "&3Welcome to map &6%map%&3! Now do your job, try your best and help your teammates!"
+   Traitor: "&3You are &6Traitor&3! Try to kill all innocents and detectives and don't die!"
+   Detective: "&3You are &6Detective&3! Try to find out who the traitors are and kill them! Don't kill any innocents!"
+   Innocent: "&3You are &6Innocent&3! Try to find out who the traitors are and kill them! Don't kill any innocents or detectives and try to survive!"

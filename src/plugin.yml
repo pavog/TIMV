@@ -9,3 +9,33 @@ commands:
    timv:
       description: Maincommand for some help and more
       usage: /<command> <arg>
+   detective:
+      description: Use this command to become a detective ingame (for 1 pass)
+      usage: /<command>
+   map:
+      description: Use this command to force a map to play (only admins)
+      usage: /<command> <arg>
+   nick:
+      description: Use this command to nickname yourself (only youtubers)
+      usage: /<command> <args>
+   party:
+      description: Use this command to have some fun in the lobby (only premiums)
+      usage: /<command>
+   shop:
+      description: Use this command to open the traitor or detective shop (ingame)
+      usage: /<command>
+   startgame:
+      description: Use this command to immediately start the game (only admins)
+      usage: /<command>
+   stopgame:
+      description: Use this command to immediately stop the game (only admins)
+      usage: /<command>
+   tl:
+      description: Shows how much time is left until the round begins / ends
+      usage: /<command>
+   traitor:
+      description: Use this command to become a traitor ingame (for 1 pass)
+      usage: /<command>
+   vote:
+      description: Use this command to vote for a map you want to play (only in lobby)
+      usage: /<command> <mapID>
