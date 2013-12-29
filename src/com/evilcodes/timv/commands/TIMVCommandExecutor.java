@@ -19,6 +19,21 @@ public class TIMVCommandExecutor implements CommandExecutor {
 			if (arg.equalsIgnoreCase("reload")) {
 				reload();
 				cs.sendMessage(MessagesHandler.convert("Reloaded"));
+			} else if (arg.equalsIgnoreCase("help")) {
+				//Help
+				displayHelp(cs, 0);
+			} else if (arg.equalsIgnoreCase("info")) {
+				//Infos about the plugin
+				displayHelp(cs, 1);
+			} else if (arg.equalsIgnoreCase("commands")) {
+				//Commands usable by all players
+				displayHelp(cs, 2);
+			} else if (arg.equalsIgnoreCase("ranks")) {
+				//Commands only usable by premium players or youtubers
+				displayHelp(cs, 3);
+			} else if (arg.equalsIgnoreCase("admin")) {
+				//Commands only usable by admins
+				displayHelp(cs, 4);
 			}
 		}
 		return true;

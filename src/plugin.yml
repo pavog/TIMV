@@ -1,12 +1,11 @@
-name: CityCraft
-main: com.evilcodes.citycraft.CityCraft
+name: TIMV
+main: com.evilcodes.timv.TIMV
 author: EvilCodes
+authors: [EvilCodes,evil_dr3am]
 version: Alpha-1.0.1
-description: The CityCraft Coreplugin
-softdepend: [WorldEdit, WorldGuard]
+description: An alternative Trouble In Mineville plugin
 website: http://www.evilcodes.tk/
 commands:
-   city:
-      description: Maincommand and nothing more!
+   timv:
+      description: Maincommand for some help and more
       usage: /<command> <arg>
-      aliases: [citycraft]
