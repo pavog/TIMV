@@ -1,0 +1,10 @@
+###MySQL Settings
+Database:
+   Host: "localhost"
+   Username: "root"
+   Password: ""
+   Databasename: "timv"
+   #The plugin will create this tables: prefix_stats prefix_users
+   Tableprefix: "timv_"
+###For sending debug messages
+Debug: false
