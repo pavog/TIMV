@@ -2,7 +2,7 @@ name: TIMV
 main: com.evilcodes.timv.TIMV
 author: EvilCodes
 authors: [EvilCodes,evil_dr3am]
-version: Alpha-1.0.1
+version: Alpha-1.0.2
 description: An alternative Trouble In Mineville plugin
 website: http://www.evilcodes.tk/
 commands:
